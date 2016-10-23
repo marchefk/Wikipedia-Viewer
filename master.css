@@ -1,47 +1,58 @@
 body {
-    font-family: 'Dosis', sans-serif;
-    color: white;
-    background-color: #474443;
-    font-size: 17px;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+  background-color: #474443;
+  font-size: 17px;
+  padding-top: 20px;
 }
 
 #input {
-    color: black;
-    font-size: 16px;
-    border-radius: 2px;
-    padding: 8px;
-    margin: 10px;
+  color: black;
+  font-size: 16px;
+  border-radius: 2px;
+  padding: 8px;
+  margin: 10px;
+  width: 170px;
+}
+
+#input:focus {
+  outline: none;
 }
 
 .btn {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+h2 {
+  text-align: center;
 }
 
 p {
-    background-color: rgb(240, 240, 240);
-    color: black;
-    border-radius: 3px;
+  background-color: rgb(240, 240, 240);
+  color: black;
+  border-radius: 3px;
 }
 
 p:hover {
-    background-color: white;
-    color: #449d44;
+  background-color: white;
+  color: #449d44;
 }
 
-a:hover {
-    text-decoration: none;
+a:hover, a:focus {
+  text-decoration: none;
 }
 
-a:active>p, a:visited>p {
-    background-color: #54514f;
-    color: white;
+a:active>p,
+a:visited>p {
+  background-color: #54514f;
+  color: white;
 }
 
 .altered {
-    padding: 10px;
-    margin: 1%;
+  padding: 10px;
+  margin: 1%;
 }
 
 .searchmatch {
-    font-weight: bold;
+  font-weight: bold;
 }
