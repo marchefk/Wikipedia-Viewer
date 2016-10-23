@@ -1,0 +1,47 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    background-color: #474443;
+    font-size: 17px;
+}
+
+#input {
+    color: black;
+    font-size: 16px;
+    border-radius: 2px;
+    padding: 8px;
+    margin: 10px;
+}
+
+.btn {
+    font-size: 20px;
+}
+
+p {
+    background-color: rgb(240, 240, 240);
+    color: black;
+    border-radius: 3px;
+}
+
+p:hover {
+    background-color: white;
+    color: #449d44;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active>p, a:visited>p {
+    background-color: #54514f;
+    color: white;
+}
+
+.altered {
+    padding: 10px;
+    margin: 1%;
+}
+
+.searchmatch {
+    font-weight: bold;
+}
