@@ -11,8 +11,10 @@ function getResults() {
   var value = getInput();
   var url = `https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=${value}&callback=?`;
   $.getJSON(url, function(data) {
+    console.log(data.query.search.length);
+    console.debug(data.hasOwnProperty('continue'));
     var validator = data.query.search[0];
-    if (!validator) {
+    if (!data.hasOwnProperty('continue')) {
       $("#notfound").show();
       $("#notfound").html("No results found.");
       for (var i = 0; i < 10; i++) {
