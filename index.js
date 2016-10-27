@@ -24,7 +24,7 @@ let getResults = () => {
       notFound.innerHTML = 'No results found.';
       wikiContainer.style.display = 'none';
     } else {
-      $("#notfound").hide();
+      notFound.style.display ='none';
       for (var i = 0; i < data.query.search.length; i++) {
         let pContainer = document.createElement('p');
         let aContainer = document.createElement('a');
